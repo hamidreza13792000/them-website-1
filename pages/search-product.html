@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search-Product</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+    <link rel="stylesheet" href="../src/library/swiper-slider/style.css">
+
+</head>
+<body>
+    
+
+    <header class="w-full container m-auto relative ">
+        <!--All header logo and input and login and shopicon  -->
+      <div class="p-[16px] lg:relative pb-[9px] lg:border-b-2 top-[13px] flex justify-between items-center flex-row">
+          <!-- logo and lnput and menu mobile and icon search mobile -->
+          <div class="flex justify-start items-center flex-row">
+             <!-- icon menu mobil -->
+              <div id="iconmenu" class="ml-[1rem] w-[2rwm] lg:hidden">                            
+                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M-2.34243e-08 0.75C-2.10818e-08 0.375 0.328125 0 0.75 0L20.25 0C20.625 0 21 0.375 21 0.75C21 1.17187 20.625 1.5 20.25 1.5L0.75 1.5C0.328125 1.5 -2.60595e-08 1.17188 -2.34243e-08 0.75ZM-7.02728e-08 8.25C-6.79304e-08 7.875 0.328125 7.5 0.75 7.5L20.25 7.5C20.625 7.5 21 7.875 21 8.25C21 8.67187 20.625 9 20.25 9L0.75 9C0.328125 9 -7.29081e-08 8.67188 -7.02728e-08 8.25ZM20.25 16.5L0.75 16.5C0.328125 16.5 -1.19757e-07 16.1719 -1.17121e-07 15.75C-1.14779e-07 15.375 0.328125 15 0.75 15L20.25 15C20.625 15 21 15.375 21 15.75C21 16.1719 20.625 16.5 20.25 16.5Z" fill="#515869"/>
+                </svg>
+              </div>
+               <!-- logo  -->
+            <div class="hidden lg:block ml-[30px]">
+              <img class="w-[100px] h-[70px]" src="../src/img/1.jpeg" alt="">
+            </div>
+            <!-- logo mobile -->
+            <div class="block lg:hidden">          
+              <img class="w-[100px] h-[50px]" src="../src/img/1.jpeg" alt="">
+            </div>
+            <!-- search box and submeu search box -->
+            <div class="relative">
+              <!-- search box  -->
+              <div>
+                  <!-- input  -->
+                <div id="parentinput" class="hidden lg:flex justify-start items-center flex-row w-[573px] h-[48px] rounded-2xl border-[1px] border-[#E0E0E2] overflow-hidden bg-[#F2F3F5] ">
+                  <input  id="inputheadersearchbox" type="text" placeholder="جستجوی  محصول" class="placeholder:text-[13px] placeholder:text-[#515869] placeholder:font-medium text-[13px] text-[#515869] font-medium outline-none w-full h-full bg-transparent pr-[30px]" />
+                  <!-- close icon  -->
+                  <a href="#" class="hidden bg-transparent ml-[20px]">            
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.8594 14.8906C16 15.0312 16 15.2656 15.8594 15.4062C15.7188 15.5469 15.4844 15.5469 15.3438 15.4062L8.5 8.5625L1.60938 15.4062C1.46875 15.5469 1.23438 15.5469 1.09375 15.4062C0.953125 15.2656 0.953125 15.0312 1.09375 14.8906L7.9375 8L1.09375 1.15625C0.953125 1.01562 0.953125 0.78125 1.09375 0.640625C1.23438 0.5 1.46875 0.5 1.60938 0.640625L8.5 7.48438L15.3438 0.640625C15.4844 0.5 15.7188 0.5 15.8594 0.640625C16 0.78125 16 1.01562 15.8594 1.15625L9.01562 8L15.8594 14.8906Z" fill="black"/>
+                    </svg> 
+                  </a>
+                  <!-- search icon  -->
+                  <a href="#" class="bg-transparent ml-[20px]">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.8594 24.022L16.875 17.0376C18.4688 15.3032 19.4531 12.9595 19.4531 10.3813C19.4531 5.0376 15.0469 0.631348 9.70312 0.631348C4.3125 0.631348 0 5.0376 0 10.3813C0 15.772 4.35938 20.1313 9.70312 20.1313C12.2344 20.1313 14.5781 19.147 16.3125 17.5532L23.2969 24.5376C23.3906 24.6313 23.4844 24.6313 23.5781 24.6313C23.625 24.6313 23.7656 24.6313 23.8125 24.5376C24 24.397 24 24.1626 23.8594 24.022ZM9.70312 19.3813C4.73438 19.3813 0.703125 15.3501 0.703125 10.3813C0.703125 5.45947 4.73438 1.38135 9.70312 1.38135C14.625 1.38135 18.7031 5.45947 18.7031 10.3813C18.7031 15.3501 14.6719 19.3813 9.70312 19.3813Z" fill="#515869" />
+                  </svg>
+                  </a>
+                  
+                </div>
+                <!-- ============================ -->
+              </div>
+             
+            </div>
+          </div>
+          <!-- login and shop icon -->
+          <div class="flex justify-center items-center flex-row">
+             <!-- search icon mobile  -->
+             <a href="#" class="bg-transparent lg:hidden">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.8594 24.022L16.875 17.0376C18.4688 15.3032 19.4531 12.9595 19.4531 10.3813C19.4531 5.0376 15.0469 0.631348 9.70312 0.631348C4.3125 0.631348 0 5.0376 0 10.3813C0 15.772 4.35938 20.1313 9.70312 20.1313C12.2344 20.1313 14.5781 19.147 16.3125 17.5532L23.2969 24.5376C23.3906 24.6313 23.4844 24.6313 23.5781 24.6313C23.625 24.6313 23.7656 24.6313 23.8125 24.5376C24 24.397 24 24.1626 23.8594 24.022ZM9.70312 19.3813C4.73438 19.3813 0.703125 15.3501 0.703125 10.3813C0.703125 5.45947 4.73438 1.38135 9.70312 1.38135C14.625 1.38135 18.7031 5.45947 18.7031 10.3813C18.7031 15.3501 14.6719 19.3813 9.70312 19.3813Z" fill="#515869" />
+              </svg>
+             </a>
+              <!-- logni  -->
+              <a href="#" class="hidden lg:flex justify-center items-center  border-2 rounded-xl w-[143px] h-[48px]">
+                 <span class="ml-[16px] w-[24px] h-[23px]">             
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.875 21.2895L5.625 21.2895C5.85938 21.2895 6 21.102 6 20.9145C6 20.6802 5.85938 20.5395 5.625 20.5395L1.875 20.5395C1.26563 20.5395 0.75 20.0239 0.75 19.4145L0.750002 2.16455C0.750002 1.5083 1.26563 1.03955 1.875 1.03955L5.625 1.03955C5.85938 1.03955 6 0.852049 6 0.664549C6 0.430174 5.85938 0.289549 5.625 0.289549L1.875 0.289549C0.843752 0.289549 1.96634e-06 1.08642 1.86866e-06 2.16455L3.05781e-07 19.4145C2.12348e-07 20.4458 0.84375 21.2895 1.875 21.2895ZM6.14063 11.0239L14.7656 19.6489C14.8125 19.7427 14.9063 19.7896 15 19.7896C15.1406 19.7896 15.2344 19.7427 15.2813 19.6489C15.4219 19.5083 15.4219 19.2739 15.2813 19.1333L7.3125 11.1645L23.625 11.1646C23.8594 11.1646 24 10.9771 24 10.7896C24 10.5552 23.8594 10.4146 23.625 10.4146L7.3125 10.4145L15.2813 2.39893C15.4219 2.2583 15.4219 2.02393 15.2813 1.8833C15.2344 1.78955 15.1406 1.78955 15 1.78955C14.9063 1.78955 14.8125 1.78955 14.7656 1.8833L6.14063 10.5083C6.04688 10.5552 6 10.6958 6 10.7895C6 10.8833 6.04688 10.977 6.14063 11.0239Z" fill="#515869"/>
+                  </svg>   
+                 </span>
+                 <span class="text-[13px] text-[#515869] font-medium ">ورود/ ثبت نام</span>
+              </a>
+              <!-- shop icon  -->
+              <a href="#" class="relative mr-[26px]">
+                  <span class="">                     
+                      <svg width="30" height="30" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 0.526367C3.14062 0.526367 3.28125 0.666992 3.32812 0.807617L3.65625 2.02637H25.3594C26.3438 2.02637 27.0938 3.01074 26.8125 3.94824L24.2812 12.9482C24.0938 13.6045 23.5312 14.0264 22.8281 14.0264H6.79688L7.78125 17.7764H23.25C23.4375 17.7764 23.625 17.9639 23.625 18.1514C23.625 18.3857 23.4375 18.5264 23.25 18.5264H7.45312C7.3125 18.5264 7.17188 18.4326 7.125 18.2451L2.67188 1.27637H0.375C0.140625 1.27637 0 1.13574 0 0.901367C0 0.713867 0.140625 0.526367 0.375 0.526367H3ZM3.84375 2.77637L6.60938 13.2764H22.8281C23.1562 13.2764 23.4844 13.0889 23.5781 12.7607L26.1094 3.76074C26.25 3.29199 25.875 2.77637 25.3594 2.77637H3.84375ZM6 22.2764C6 21.0576 6.98438 20.0264 8.25 20.0264C9.46875 20.0264 10.5 21.0576 10.5 22.2764C10.5 23.542 9.46875 24.5264 8.25 24.5264C6.98438 24.5264 6 23.542 6 22.2764ZM8.25 23.7764C9.04688 23.7764 9.75 23.1201 9.75 22.2764C9.75 21.4795 9.04688 20.7764 8.25 20.7764C7.40625 20.7764 6.75 21.4795 6.75 22.2764C6.75 23.1201 7.40625 23.7764 8.25 23.7764ZM24 22.2764C24 23.542 22.9688 24.5264 21.75 24.5264C20.4844 24.5264 19.5 23.542 19.5 22.2764C19.5 21.0576 20.4844 20.0264 21.75 20.0264C22.9688 20.0264 24 21.0576 24 22.2764ZM21.75 20.7764C20.9062 20.7764 20.25 21.4795 20.25 22.2764C20.25 23.1201 20.9062 23.7764 21.75 23.7764C22.5469 23.7764 23.25 23.1201 23.25 22.2764C23.25 21.4795 22.5469 20.7764 21.75 20.7764Z" fill="#515869"/>
+                      </svg>
+                  </span>
+                  <span class="absolute top-0 right-0">                     
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <ellipse cx="5" cy="5.45591" rx="5" ry="4.82456" fill="#FF512F"/>
+                        </svg>
+                  </span>
+              </a>
+          </div>
+      </div>
+      <br>
+      <!-- menu header desktop -->
+      <div class="hidden lg:block mt-[-10px] relative border-b-2 z-50">
+          <ul class="flex justify-start items-center flex-row">
+              <li class="group border-l-2 w-[100px] h-[50px] mr-[20px]">
+                <a href="#" class="flex justify-center items-center flex-row w-full h-full">
+                  <span class="text-[15px] text-[#393939] font-vmedium ">صفحه اصلی</span>
+                </a>
+                <!-- submenu in menu headwer -->
+                <div class=" absolute transition-all duration-1000 ease-in-out w-full h-[0px] group-hover:h-[27rem] overflow-hidden border-b-[1px] border-red-500 bg-slate-100 shadow-2xl mr-[-20px] z-10">
+                  <summary class="flex justify-start items-center mt-[1rem] mr-[2rem]">
+                    <span class="text-[15px] text-[#515869] text-right font-light">همه محصولات کتاب</span>
+                    <span class="mr-[10px]">                    
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4492 11.7344C11.3438 11.8398 11.2031 11.875 11.0625 11.875C10.8867 11.875 10.7461 11.8398 10.6406 11.7344L1.5 2.55859V9.0625C1.5 9.37891 1.21875 9.625 0.9375 9.625C0.621094 9.625 0.375 9.37891 0.375 9.0625V1.1875C0.375 0.90625 0.621094 0.625 0.902344 0.625H8.77734C9.09375 0.625 9.33984 0.871094 9.33984 1.1875C9.33984 1.50391 9.09375 1.75 8.8125 1.75H2.27344L11.4492 10.9258C11.6602 11.1367 11.6602 11.5234 11.4492 11.7344Z" fill="#515869"/>
+                        </svg>
+                    </span>
+                  </summary> 
+                  <ul class="flex justify-between items-start p-[20px]">
+                    <li class="leading-10">
+                      <ul>
+                        <li class="text-[#E3272F] text-[15px] font-medium">دسته اصلی</li>
+                        <a href=""> <li class="text-[#3C4043] text-[15px] font-light"> کتاب چاپی </li></a>
+                        <a href=""><li class="text-[#3C4043] text-[15px] font-light"> کتاب صوتی</li></a>
+                        <a href=""><li class="text-[#3C4043] text-[15px] font-light"> کتاب الکترونیک</li></a>
+                        <a href=""><li class="text-[#3C4043] text-[15px] font-light"> لوح فشرده</li></a> 
+                      </ul>
+                      <br>
+                      <ul>
+                        <li class="text-[#E3272F] text-[15px] font-medium"> براساس ژانر</li>
+                        <a href="#"> <li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                      </ul>
+                    </li>
+  
+                    <li  class="leading-9">
+                      <ul>
+                        <li class="text-[#E3272F] text-[15px] font-medium">صفحه اصلی</li>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                      </ul>
+                    </li>
+  
+                    <li  class="leading-9">
+                      <ul>
+                        <li class="text-[#E3272F] text-[15px] font-medium">صفحه اصلی</li>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                       <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                      </ul>
+                    </li>
+  
+                    <li  class="leading-9">
+                      <ul>
+                        <li class="text-[#E3272F] text-[15px] font-medium">صفحه اصلی</li>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                      </ul>
+                    </li>
+  
+                    <li  class="leading-10">
+                      <ul>
+                        <a href="#"><li class="text-[#E3272F] text-[15px] font-medium"> لوح فشرده</li></a>
+                        <a href="#"><li class="text-[#E3272F] text-[15px] font-medium">کتاب چاپی</li></a>
+                        <a href="#"><li class="text-[#E3272F] text-[15px] font-medium"> کتاب صوتی</li></a>
+                        <a href="#"> <li class="text-[#E3272F] text-[15px] font-medium">کتاب الکترونیک</li></a>
+                      </ul>
+                      <br>
+                      <ul>
+                        <li class="text-[#E3272F] text-[15px] font-medium">صفحه اصلی</li>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                        <a href="#"><li class="text-[#3C4043] text-[15px] font-light">صفحه فرعی</li></a>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+  
+              </li>
+  
+              <li class="border-l-2 w-[130px] h-[50px]">
+                <a href="#" class="flex justify-center items-center flex-row w-full h-full">
+                  <span class="text-[15px] text-[#393939] font-vmedium">مقاله ها</span>
+                </a>
+  
+              </li>
+  
+              <li class="border-l-2 w-[130px] h-[50px]">
+                <a href="#" class="flex justify-center items-center flex-row w-full h-full">     
+                  <span class="text-[15px] text-[#393939] font-vmedium">ملزومات لباس</span>
+                </a>
+  
+              </li>
+  
+              <li class="border-l-2 w-[130px] h-[50px]">
+                <a href="#" class="flex justify-center items-center flex-row w-full h-full">
+                  <span class="text-[15px] text-[#393939] font-light">فروشگاه</span>
+                </a>
+  
+              </li>
+  
+              <li class="border-l-2 w-[130px] h-[50px]">
+                <a href="#" class="flex justify-center items-center flex-row w-full h-full">
+                     
+                  <span class="text-[15px] text-[#393939] font-vmedium">درباره ما</span>
+                </a>
+  
+              </li>
+  
+              
+          </ul>
+  
+      </div>
+    </header>
+    
+     <!-- menu header mobile  -->
+     <div id="menumoblile" class="fixed overflow-x-scroll w-[100%] h-[100%] left-0 right-0 top-0 z-50 bg-white pr-[10px] pl-[20px] pt-[1rem]" style="display: none;">
+        <!-- logo menu mobile and close icon -->
+       <div class="flex justify-between items-center flex-row">
+          <!-- logo menu mobile  -->
+          <div class="">
+            <img class="w-[70px] h-[30px]" src="../src/img/1.jpeg" alt="">
+          </div>
+          <!-- close icon menu mobile  -->
+          <span id="closeiconmobile" class="bg-transparent ">            
+            <svg width="15" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.8594 14.8906C16 15.0312 16 15.2656 15.8594 15.4062C15.7188 15.5469 15.4844 15.5469 15.3438 15.4062L8.5 8.5625L1.60938 15.4062C1.46875 15.5469 1.23438 15.5469 1.09375 15.4062C0.953125 15.2656 0.953125 15.0312 1.09375 14.8906L7.9375 8L1.09375 1.15625C0.953125 1.01562 0.953125 0.78125 1.09375 0.640625C1.23438 0.5 1.46875 0.5 1.60938 0.640625L8.5 7.48438L15.3438 0.640625C15.4844 0.5 15.7188 0.5 15.8594 0.640625C16 0.78125 16 1.01562 15.8594 1.15625L9.01562 8L15.8594 14.8906Z" fill="black"/>
+            </svg> 
+          </span>
+       </div>
+        <!-- menu mobile  -->
+          <ul id="menumoblile" class=" font-light mt-[3rem] bg-white z-20">
+  
+              <li class="group w-auto h-auto mr-[1rem]">
+                  <a id="menudroupdown" href="#" class="flex justify-start items-start flex-row text-[15px] w-full h-full">
+                    <span class="text-[15px] text-[#393939] font-vmedium">صفحه اصلی</span>
+                  </a>
+                  <!-- submenu menu mobile  -->
+                  <div id="dropdownmenu" class="overflow-hidden transition-all duration-1000 ease-in-out h-0">
+                    <!-- srction 1  -->
+                    <ul class="flex justify-start items-start flex-col border-b-2 pb-[0.3rem] leading-[30px]">
+  
+                      <li class="flex justify-start items-start flex-col">
+        
+                        <p class="text-[12px] text-[#F36D21] mt-[19px] font-medium"> محصولات جدید</p>
+                        <a href="#" class="flex justify-start items-start flex-row">
+        
+                          <span class="text-[9px] text-[#666666] font-light">مشاهده همه محصولات</span> 
+                          <span class="mr-[2px]">                      
+                            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.7727 1.08596V5.69532C6.7727 5.88052 6.60808 6.02456 6.44346 6.02456C6.25826 6.02456 6.11422 5.88052 6.11422 5.69532V1.88848L0.743486 7.25921C0.681753 7.32094 0.599443 7.34152 0.517133 7.34152C0.414246 7.34152 0.331935 7.32094 0.270203 7.25921C0.146738 7.13574 0.146738 6.90939 0.270203 6.78593L5.64093 1.4152L1.81352 1.4152C1.6489 1.4152 1.48428 1.25058 1.50485 1.08596C1.50485 0.900759 1.6489 0.756716 1.83409 0.756716L6.44346 0.756716C6.60808 0.756716 6.7727 0.921336 6.7727 1.08596Z" fill="#BEBEBE"/>
+                              </svg>
+                          </span>
+        
+                        </a>
+        
+                      </li>
+  
+                      <li>
+                        <a href="#" class="text-[12px] text-[#262626] font-light">_ خاطرات</a>
+                      </li>
+  
+                      <li>
+                        <a href="#" class="text-[12px] text-[#262626] font-light">_ بانوان</a>
+                      </li>
+  
+                      <li>
+                        <a href="#" class="text-[12px] text-[#262626] font-light">_ طنز</a>
+                      </li>
+  
+                      <li>
+                        <a href="#" class="text-[12px] text-[#F36D21] font-light">_ خاطرات آزادگان</a>
+                      </li>
+  
+                      <li>
+                        <a href="#" class="text-[12px] text-[#F36D21] font-light mr-[10px]">_ سطح سوم</a>
+                      </li>
+  
+                      <li>
+                        <a href="#" class="text-[12px] text-[#F36D21] font-light ">بیشتر</a>
+                      </li>
+  
+                    </ul>
+                    <!-- section 2  -->
+                    <ul class="p-[8px] leading-[40px]">
+                      <li class="border-b-2 text-[12px] text-[#262626]"><a href="#">رمان</a></li>
+                      <li class="border-b-2 text-[12px] text-[#262626]"><a href="#">کودک و نوجوان</a></li>
+                      <li class="border-b-2 text-[12px] text-[#262626]"><a href="#">ادبیات داستانی و شعر</a></li>
+                      <li class="border-b-2 text-[12px] text-[#262626]"><a href="#">موفقیت و سبک زندگی</a></li>
+                      <li class="border-b-2 text-[12px] text-[#262626]"><a href="#">مدیریت کسب وکار</a></li>
+                      <li class="border-b-2 text-[12px] text-[#262626]"><a href="#">اسلام و معارف</a></li>
+                    
+                    </ul>
+                  </div>
+              </li>
+    
+              <li class=" w-[130px] h-[50px]">
+                <a href="#" class="flex justify-start items-center flex-row text-[15px]  w-full h-full">
+                  <span class="text-[15px] text-[#393939] mr-[30px] font-vmedium">مقاله ها</span>
+                </a>
+    
+              </li>
+    
+              <li class=" w-[130px] h-[50px]">
+                <a href="#" class="flex justify-start items-center flex-row text-[15px] w-full h-full">
+                  <span class="text-[15px] text-[#393939] mr-[30px] font-vmedium">ملزومات لباس </span>
+                </a>
+    
+              </li>
+    
+              <li class=" w-[130px] h-[50px]">
+                <a href="#" class="flex justify-start items-center flex-row text-[15px] w-full h-full">
+                  <span class="text-[15px] text-[#393939] mr-[30px] font-vmedium">فروشگاه</span>
+                </a>
+    
+              </li>
+    
+              <li class=" w-[130px] h-[50px]">
+                <a href="#" class="flex justify-start items-center flex-row text-[15px] w-full h-full">
+                  <span class="text-[15px] text-[#393939] mr-[30px] font-vmedium"> درباره ما</span>
+                </a>
+    
+              </li>
+    
+              
+          </ul>
+      </div>
+    
+
+      <!-- SLIDER CONTENT 1  -->
+      <div class="hidden lg:block">
+        <div class="swiper search-mySwiper-1 mt-[100px]">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../src/img/6.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/29.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/6.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/8.jpg" />
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+     </div>
+        <!-- img mobile header  -->
+        <div class="lg:hidden block">
+            <img src="../src/img/8.jpg" alt="">
+        </div>
+
+        <!-- pic content 2  -->
+      <div class="container ml-auto mr-auto mb-auto mt-[46px] grid grid-cols-2 grid-rows-1 gap-2 grid-flow-dense lg:grid lg:grid-cols-6 lg:grid-rows-1 lg:gap-3 border-2 border-[#E5E5E5] rounded-[15px] bg-[#F8F9FB] p-[13px] lg:p-[24px]">
+
+        <div class="pb-[19px] flex justify-end lg:justify-center items-center lg:items-start flex-col lg:leading-[45px] col-span-2">
+          <p class="text-[10px] lg:text-[16px] text-[#393939] text-right font-light">پیشنهاد های ما</p>
+          <p class="text-[16px] text-center lg:text-[24px] text-[#515869] lg:text-right font-bold w-full lg:w-[190px]">دیگه وقتشه  این محصولات رو امتحان کنی!</p>
+        </div>
+
+        <span class="relative border-2">
+            <span class="block lg:hidden w-[85.52px] h-[32.39px] text-left pl-[5px] absolute bottom-[2px] left-[2px] bg-white/60 rounded-[4px] border-2">
+              <s class="block text-[8px] text-[#3C4043] font-light">198,000 تومان</s>
+              <b class="block text-[#575757] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class=" w-full h-full" src="../src/img/37.jpg" alt="">
+        </span>
+
+        <span class="relative border-2">
+            <span class="block lg:hidden w-[85.52px] h-[32.39px] text-left pl-[5px] absolute bottom-[2px] left-[2px] bg-white/60 rounded-[4px] border-2">
+              <s class="block text-[8px] text-[#3C4043] font-light">198,000 تومان</s>
+              <b class="block text-[#575757] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class=" w-full h-full" src="../src/img/38.jpg" alt="">
+        </span>
+
+        <span class="relative border-2">
+            <span class="block lg:hidden w-[85.52px] h-[32.39px] text-left pl-[5px] absolute bottom-[2px] left-[2px] bg-white/60 rounded-[4px] border-2">
+              <s class="block text-[8px] text-[#3C4043] font-light">198,000 تومان</s>
+              <b class="block text-[#575757] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class=" w-full h-full" src="../src/img/39.jpg" alt="">
+        </span>
+
+        <span class="relative border-2">
+            <span class="block lg:hidden w-[85.52px] h-[32.39px] text-left pl-[5px] absolute bottom-[2px] left-[2px] bg-white/60 rounded-[4px] border-2">
+              <s class="block text-[8px] text-[#3C4043] font-light">198,000 تومان</s>
+              <b class="block text-[#575757] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class=" w-full h-full" src="../src/img/40.jpg" alt="">
+        </span>
+
+        <a href="#" class="mt-[20px] col-span-2 lg:hidden flex justify-center items-center flex-row">
+          <p class=" text-[14px] text-[#1967D2] font-light">مشاهده همه</p>
+          <span class="mr-[10px]">    
+            <svg width="9" height="19" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.9609 8.5C17.9609 9.04688 17.5312 9.47656 17.0234 9.47656H3.74219L8.9375 14.3984C9.32812 14.75 9.32812 15.375 8.97656 15.7266C8.625 16.1172 8.03906 16.1172 7.64844 15.7656L0.773438 9.20312C0.578125 9.00781 0.5 8.77344 0.5 8.5C0.5 8.26562 0.578125 8.03125 0.773438 7.83594L7.64844 1.27344C8.03906 0.921875 8.625 0.921875 8.97656 1.3125C9.32812 1.66406 9.32812 2.28906 8.9375 2.64062L3.74219 7.5625H17.0234C17.5703 7.5625 17.9609 7.99219 17.9609 8.5Z" fill="#1967D2"/>
+            </svg>   
+          </span>
+        </a>
+
+      </div>
+
+      <!-- SHOW PRODUCT 1  -->
+        <div>
+            <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+            
+
+            <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+                <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+                <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+            </div>
+
+            <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+                <div class="absolute left-[70px] top-[30px]">
+                    <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                    <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+                </div>
+
+
+                <div class="swiper search-mySwiper-2 mt-[20px]">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                
+                </div>
+                
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+      <!-- SHOW PRODUCT 1  -->
+        <div>
+            <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+            
+
+            <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+                <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+                <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+            </div>
+
+            <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+                <div class="absolute left-[70px] top-[30px]">
+                    <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                    <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+                </div>
+
+
+                <div class="swiper search-mySwiper-2 mt-[20px]">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                
+                </div>
+                
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+      <!-- SHOW PRODUCT 1  -->
+        <div>
+            <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+            
+
+            <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+                <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+                <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+            </div>
+
+            <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+                <div class="absolute left-[70px] top-[30px]">
+                    <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                    <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+                </div>
+
+
+                <div class="swiper search-mySwiper-2 mt-[20px]">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                
+                </div>
+                
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+      <!-- SHOW PRODUCT 1  -->
+        <div>
+            <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+            
+
+            <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+                <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+                <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+            </div>
+
+            <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+                <div class="absolute left-[70px] top-[30px]">
+                    <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                    <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+                </div>
+
+
+                <div class="swiper search-mySwiper-2 mt-[20px]">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                        <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                        <div class="flex justify-center items-center flex-row">
+                            <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                            <span class="mr-[5px]">  
+                                <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                        <span class="flex justify-center items-center flex-row">
+                            <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                        </span>
+
+                        <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                        </div>
+
+                    </div>
+
+                
+                </div>
+                
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+
+    
+    <!-- pic content  -->
+    <div class="w-full bg-[#101010] p-[10px] mt-[66px]">
+        <div class="container ml-auto mr-auto mb-auto mt-[17px] lg:mt-[81px] grid grid-cols-3 grid-row-1 lg:grid-cols-6 lg:grid-rows-2 gap-5 pb-[15px]">
+
+          <div class="flex justify-center items-center lg:justify-start lg:items-baseline flex-col col-span-3 lg:col-span-2 row-span-1 leading-6 lg:leading-10">
+            <span class="text-[10px] lg:text-[16px] font-light text-[#A3A3A3]">پیشنهاد های ما</span>
+            <span class="text-center lg:text-right text-[16px] lg:text-[24px] w-full lg:w-[230px] font-bold text-white">   مجموعه های نفیس</span>
+            <a href="#" class="hidden lg:flex justify-center items-center flex-row text-[20px] font-light">
+              <p class=" text-[#A3A3A3]">مشاهده همه</p>
+              <span class="mr-[10px] text-white">    
+                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.9609 8.5C17.9609 9.04688 17.5312 9.47656 17.0234 9.47656H3.74219L8.9375 14.3984C9.32812 14.75 9.32812 15.375 8.97656 15.7266C8.625 16.1172 8.03906 16.1172 7.64844 15.7656L0.773438 9.20312C0.578125 9.00781 0.5 8.77344 0.5 8.5C0.5 8.26562 0.578125 8.03125 0.773438 7.83594L7.64844 1.27344C8.03906 0.921875 8.625 0.921875 8.97656 1.3125C9.32812 1.66406 9.32812 2.28906 8.9375 2.64062L3.74219 7.5625H17.0234C17.5703 7.5625 17.9609 7.99219 17.9609 8.5Z" fill="#C4C4C4"/>
+                </svg>   
+              </span>
+            </a>
+          </div>
+
+          <span class="relative border-2">
+              <span class="block lg:hidden w-[60.28px] h-[25.76px] text-left pl-[2px] m-[4px] absolute bottom-[2px] left-[2px] bg-black/60 rounded-[4px]">
+                <s class="block text-[8px] text-[#ffff] font-light">198,000 تومان</s>
+                <b class="block text-[#ffff] text-[10px] font-medium">98,000 تومان</b>
+              </span>
+              <img class="w-full h-full" src="../src/img/47.jpg" alt="">
+          </span>
+
+          <span class="relative border-2">
+            <span class="block lg:hidden w-[60.28px] h-[25.76px] text-left pl-[2px] m-[4px] absolute bottom-[2px] left-[2px] bg-black/60 rounded-[4px]">
+              <s class="block text-[8px] text-[#ffff] font-light">198,000 تومان</s>
+              <b class="block text-[#ffff] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class="w-full h-full" src="../src/img/48.jpg" alt="">
+          </span>
+
+          <span class=" border-2 hidden lg:block col-span-2 row-span-2"><img class="w-full h-full" src="../src/img/48.jpg" alt=""></span>
+          <span class="relative border-2">
+            <span class="block lg:hidden w-[60.28px] h-[25.76px] text-left pl-[2px] m-[4px] absolute bottom-[2px] left-[2px] bg-black/60 rounded-[4px]">
+              <s class="block text-[8px] text-[#ffff] font-light">198,000 تومان</s>
+              <b class="block text-[#ffff] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class="w-full h-full" src="../src/img/50.jpg" alt="">
+          </span>
+
+          <span class="relative border-2">
+            <span class="block lg:hidden w-[60.28px] h-[25.76px] text-left pl-[2px] m-[4px] absolute bottom-[2px] left-[2px] bg-black/60 rounded-[4px]">
+              <s class="block text-[8px] text-[#ffff] font-light">198,000 تومان</s>
+              <b class="block text-[#ffff] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class="w-full h-full" src="../src/img/51.jpg" alt="">
+          </span>
+
+          <span class="relative border-2">
+            <span class="block lg:hidden w-[60.28px] h-[25.76px] text-left pl-[2px] m-[4px] absolute bottom-[2px] left-[2px] bg-black/60 rounded-[4px]">
+              <s class="block text-[8px] text-[#ffff] font-light">198,000 تومان</s>
+              <b class="block text-[#ffff] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class="w-full h-full" src="../src/img/52.jpg" alt="">
+          </span>
+
+          <span class="relative border-2">
+            <span class="block lg:hidden w-[60.28px] h-[25.76px] text-left pl-[2px] m-[4px] absolute bottom-[2px] left-[2px] bg-black/60 rounded-[4px]">
+              <s class="block text-[8px] text-[#ffff] font-light">198,000 تومان</s>
+              <b class="block text-[#ffff] text-[10px] font-medium">98,000 تومان</b>
+            </span>
+            <img class="w-full h-full" src="../src/img/53.jpg" alt="">
+          </span>
+
+          <a href="#" class="col-span-3 lg:hidden flex justify-center items-center flex-row ">
+            <p class=" text-[9.96px]  text-white font-light">مشاهده همه</p>
+            <span class="mr-[10px]">    
+              <svg width="9" height="19" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.9609 8.5C17.9609 9.04688 17.5312 9.47656 17.0234 9.47656H3.74219L8.9375 14.3984C9.32812 14.75 9.32812 15.375 8.97656 15.7266C8.625 16.1172 8.03906 16.1172 7.64844 15.7656L0.773438 9.20312C0.578125 9.00781 0.5 8.77344 0.5 8.5C0.5 8.26562 0.578125 8.03125 0.773438 7.83594L7.64844 1.27344C8.03906 0.921875 8.625 0.921875 8.97656 1.3125C9.32812 1.66406 9.32812 2.28906 8.9375 2.64062L3.74219 7.5625H17.0234C17.5703 7.5625 17.9609 7.99219 17.9609 8.5Z" fill="#FFFFFF"/>
+              </svg>   
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+
+
+
+
+
+       <!-- SHOW PRODUCT 1  -->
+       <div>
+        <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+        
+
+        <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+            <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+            <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+        </div>
+
+        <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+            <div class="absolute left-[70px] top-[30px]">
+                <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+            </div>
+
+
+            <div class="swiper search-mySwiper-2 mt-[20px]">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+            
+            </div>
+            
+            </div>
+
+        </div>
+        
+        </div>
+    </div>
+
+     <!-- SHOW PRODUCT 1  -->
+     <div>
+        <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+        
+
+        <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+            <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+            <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+        </div>
+
+        <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+            <div class="absolute left-[70px] top-[30px]">
+                <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+            </div>
+
+
+            <div class="swiper search-mySwiper-2 mt-[20px]">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+            
+            </div>
+            
+            </div>
+
+        </div>
+        
+        </div>
+    </div>
+
+     <!-- SHOW PRODUCT 1  -->
+     <div>
+        <div class=" container ml-auto mr-auto mt-[100px] mb-auto relative">
+
+        
+
+        <div class="w-full mr-[unset] p-[5px] lg:w-auto flex justify-between items-center flex-row lg:mr-[137px] absolute top-[25px]">
+            <p class="text-[1.5rem] text-right text-[#ff4141] font-bold ">فروش ویژه</p>
+            <p class="text-[1rem] text-right text-[#ff2121] font-light mr-[15px]">مشاهده همه</p>
+        </div>
+
+        <div class="pr-[30px] lg:px-[30px] pt-[50px]">
+            <div class="absolute left-[70px] top-[30px]">
+                <div class="swiper-button-next relative invisible !left-[60px] !right-[unset]  lg:visible swiper-button-next2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>
+                <div class="swiper-button-prev relative invisible !left-[0px] !right-[unset] lg:visible swiper-button-prev2 border-[1px] border-[#E5E5E5] bg-[#FFFFFF] rounded-[16px] after:text-[15px] after:text-[#515869] after:text-center p-[25px]"></div>                            
+            </div>
+
+
+            <div class="swiper search-mySwiper-2 mt-[20px]">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/10.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[8px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/18.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600  w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/19.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/20.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide rounded-lg border-[1px] overflow-hidden border-red-600 w-[138.53px] lg:w-[340px] h-[185px] lg:h-[334px] bg-[#FFFFFF]">
+
+                    <img class="w-[133px] lg:w-[350px] h-[133px] lg:h-[334px]" src="../src/img/12.jpg" alt="img slider">
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[5px] lg:mt-[15px]">
+
+                    <div class="flex justify-center items-center flex-row">
+                        <span class="text-[7.46px] lg:text-[14px] font-light text-[#515869]">4.3</span>
+                        <span class="mr-[5px]">  
+                            <svg width="14" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.418 4.87891L14.3281 5.45312C14.6562 5.50781 14.9297 5.72656 15.0391 6.05469C15.1484 6.35547 15.0664 6.71094 14.8203 6.92969L11.9766 9.74609L12.6602 13.7383C12.7148 14.0664 12.5781 14.3945 12.3047 14.5859C12.0312 14.8047 11.6758 14.8047 11.375 14.668L7.875 12.7812L4.34766 14.668C4.07422 14.8047 3.69141 14.8047 3.44531 14.5859C3.17188 14.3945 3.03516 14.0664 3.08984 13.7383L3.74609 9.74609L0.902344 6.92969C0.65625 6.71094 0.574219 6.35547 0.683594 6.05469C0.792969 5.72656 1.06641 5.50781 1.39453 5.45312L5.33203 4.87891L7.08203 1.24219C7.21875 0.941406 7.51953 0.75 7.875 0.75C8.20312 0.75 8.50391 0.941406 8.64062 1.24219L10.418 4.87891Z" fill="#FAC251"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="text-[7.99px] lg:text-[15px] text-[#A3A3A3] font-light"><s>118,000 تومان</s></span>
+
+                    </div>
+
+                    <div class="flex justify-between items-center flex-row px-[17px] mt-[15px] mb-[8px]">
+
+                    <span class="flex justify-center items-center flex-row">
+                        <span class="text-red-600 text-[10.43px] lg:text-[19px] font-medium">%25</span>
+                    </span>
+
+                    <span class="text-[10.43px] lg:text-[19.5px] text-[#575757] font-medium">98,000 تومان</span>
+
+                    </div>
+
+                </div>
+
+            
+            </div>
+            
+            </div>
+
+        </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+
+         <!-- footer  -->
+         <footer class=" mt-[40px] lg:mt-[112px] w-full ">
+
+            <!-- logo footer  -->
+        <div class="w-full bg-[#F8F9FB] py-[10px] lg:py-[0px] px-[0px] lg:px-[10px]">
+            <div class="container m-auto lg:flex hidden justify-between lg:justify-center items-start lg:items-center flex-row-reverse bg-[#F8F9FB] p-[20px]">
+            <p class="hidden lg:block text-[15px] lg:text-[18px] text-[#515869] text-right font-light">تلفن پشتیبانی:  258101۰۰ - 025     |     ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+            <p class="block lg:hidden text-[15px] text-[#515869] text-right font-light">تلفن پشتیبانی:  258101۰۰ - 025 </p>
+            <span class="ml-[20px]">        
+                <img class="w-[100px] h-[60px] " src="../src/img/1.jpeg" alt=""> 
+            </span>
+            </div>
+            <p class="block lg:hidden text-[13px] pr-[20px] text-[#515869] text-right font-light">تلفن پشتیبانی:  258101۰۰ - 025 </p>
+        </div>
+        
+        <!-- menu footer  -->
+        <div class="bg-[#F2F3F5] pt-[20px] lg:pt-[50px] pb-[20px] w-full">
+        <div class="container m-auto grid grid-cols-1 lg:grid-cols-5 grid-rows-1">
+            
+            <div class="col-span-2 lg:col-span-1 px-[10px] lg:px-[25px]">
+              <ul class="leading-10 h-[50px] lg:h-auto pb-[10px] lg:py-[0px] px-[10px] lg:px-0 overflow-hidden transition-all duration-700 ease-in-out border-b-2 lg:border-b-[0px] dropdownmenufooter">
+              <li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-medium flex justify-between items-center flex-row">
+                  <p class="mb-[30px] lg:mb-0"> اطلاعات</p>   
+                  <div class="lg:hidden mb-[30px] lg:mb-0">
+                  <span class="iconmenufooterdown block">
+                  <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.859375 0.726562C0.941406 0.617188 1.05078 0.5625 1.1875 0.5625C1.26953 0.5625 1.37891 0.589844 1.46094 0.671875L6.84766 5.62109L12.2617 0.671875C12.4258 0.507812 12.6992 0.507812 12.8633 0.699219C13.0273 0.863281 13.0273 1.13672 12.8359 1.30078L7.14844 6.55078C6.98438 6.71484 6.73828 6.71484 6.57422 6.55078L0.886719 1.30078C0.695312 1.16406 0.695312 0.890625 0.859375 0.726562Z" fill="#515869"/>
+                  </svg>
+                  </span>
+                  </div>
+              </li>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light"> پاسخ به پرسش‌های رایج</li></a>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">شرایط استفاده</li></a>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">حریم خصوصی</li></a>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">گزارش اشکال</li></a>
+              </ul>
+            </div>
+        
+            <div class="col-span-2 lg:col-span-1 px-[10px]">
+              <ul class="leading-10 h-[50px] lg:h-auto py-[10px] lg:py-0 px-[10px] lg:px-0 overflow-hidden transition-all duration-700 ease-in-out z-50 border-b-2 lg:border-b-[0px] dropdownmenufooter">
+                  <li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-medium flex justify-between items-center flex-row">
+                      <p class="pb-[30px] lg:pb-0"> راهنمای خرید </p>   
+                      <div class="lg:hidden pb-[30px] lg:pb-0">
+                          <span class="iconmenufooterdown block">
+                          <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.859375 0.726562C0.941406 0.617188 1.05078 0.5625 1.1875 0.5625C1.26953 0.5625 1.37891 0.589844 1.46094 0.671875L6.84766 5.62109L12.2617 0.671875C12.4258 0.507812 12.6992 0.507812 12.8633 0.699219C13.0273 0.863281 13.0273 1.13672 12.8359 1.30078L7.14844 6.55078C6.98438 6.71484 6.73828 6.71484 6.57422 6.55078L0.886719 1.30078C0.695312 1.16406 0.695312 0.890625 0.859375 0.726562Z" fill="#515869"/>
+                          </svg>
+                          </span>
+                      </div>
+                  </li>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">راهنمای ثبت سفارش</li></a>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">رویه ارسال سفارش</li></a>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">شیوه‌های پرداخت</li></a>
+                  <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">رویه مرجوع کردن کالا و مبلغ</li></a>
+              </ul>
+            </div>
+        
+            <div class="col-span-2 lg:col-span-1 px-[10px]">
+            <ul class="leading-10 h-[50px] lg:h-auto px-[10px] lg:px-0 py-[10px] lg:py-0 overflow-hidden transition-all duration-700 ease-in-out border-b-2 lg:border-b-[0px] dropdownmenufooter">
+                <li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-medium  flex justify-between items-center flex-row">
+                <p class="mb-[30px] lg:mb-0">با ما باشید</p>   
+                <div class="lg:hidden mb-[30px] lg:mb-0">
+                    <span class="iconmenufooterdown block">
+                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.859375 0.726562C0.941406 0.617188 1.05078 0.5625 1.1875 0.5625C1.26953 0.5625 1.37891 0.589844 1.46094 0.671875L6.84766 5.62109L12.2617 0.671875C12.4258 0.507812 12.6992 0.507812 12.8633 0.699219C13.0273 0.863281 13.0273 1.13672 12.8359 1.30078L7.14844 6.55078C6.98438 6.71484 6.73828 6.71484 6.57422 6.55078L0.886719 1.30078C0.695312 1.16406 0.695312 0.890625 0.859375 0.726562Z" fill="#515869"/>
+                    </svg>
+                    </span>
+                </div>
+                </li>
+                <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">درباره ما</li></a>
+                <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">تماس با ما</li></a>
+                <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">فرصت‌های شغلی</li></a>
+                <a href="#"><li class="text-[14px] lg:text-[18px] text-right text-[#515869] font-light">مجله های ما</li></a> 
+            </ul>
+            </div>
+        
+            <div class="col-span-2 mt-[45px] lg:mt-0">
+              <div class="flex justify-start items-center flex-col">
+              
+                  <h2 class="w-[325px] lg:w-[411px] text-[15px] lg:text-[17.99px] text-right text-[#515869] font-bold">از تخفیف‌های جدید ما با خبر شوید..</h2>
+                      <!-- input footer -->
+                  <div class="overflow-hidden w-[329px] lg:w-[411px] h-[42px] lg:h-[60px] bg-transparent border-2 rounded-xl px-3 flex justify-start items-center flex-row mt-[17px]">
+                  <input type="text" placeholder="آدرس ایمیل شما" class="text-[15px] lg:text-[18px] text-[#515869] font-light placeholder:text-[15px] lg:placeholder:text-[18px] placeholder:text-[#515869] placeholder:font-light w-full h-full bg-transparent outline-none">
+                  <a href="#" class="text-[15px] lg:text-[17.99px] text-right text-[#515869] font-light">ثبت</a>
+                  </div>
+                      <!-- icon footer -->
+                  <div class="w-2/3 flex justify-between lg:justify-end items-center flex-row lg:px-0 px-[30px] mt-[32px]">
+              
+                  <a href="#" class="ml-[15px] w-[29px] h-[24px] lg:w-[39px] lg:h-[39px]">     
+                      <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M35.8404 0.595746H3.07447C1.62766 0.595746 0.436171 1.87234 0.436171 3.40426V36C0.436171 37.5319 1.62766 38.7234 3.07447 38.7234H35.8404C37.2872 38.7234 38.5638 37.5319 38.5638 36V3.40426C38.5638 1.87234 37.2872 0.595746 35.8404 0.595746ZM11.9255 33.2766H6.30851V15.1489H11.9255V33.2766ZM9.11702 12.5957C7.24468 12.5957 5.79787 11.1489 5.79787 9.3617C5.79787 7.57447 7.24468 6.04255 9.11702 6.04255C10.9043 6.04255 12.3511 7.57447 12.3511 9.3617C12.3511 11.1489 10.9043 12.5957 9.11702 12.5957ZM33.117 33.2766H27.4149V24.4255C27.4149 22.383 27.4149 19.6596 24.5213 19.6596C21.5426 19.6596 21.117 21.9574 21.117 24.3404V33.2766H15.5V15.1489H20.8617V17.617H20.9468C21.7128 16.1702 23.5851 14.6383 26.3085 14.6383C32.0106 14.6383 33.117 18.4681 33.117 23.3191V33.2766Z" fill="#515869"/>
+                      </svg>
+                  </a>
+              
+                  <a href="#" class="ml-[15px] w-[29px] h-[24px] lg:w-[39px] lg:h-[39px]">          
+                      <svg  viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M39.2766 8.80851C39.2766 9.23404 39.2766 9.57447 39.2766 10C39.2766 21.8298 30.3404 35.3617 13.9149 35.3617C8.80851 35.3617 4.12766 33.9149 0.212767 31.3617C0.893618 31.4468 1.57447 31.5319 2.34043 31.5319C6.51064 31.5319 10.3404 30.0851 13.4043 27.7021C9.48936 27.617 6.17021 25.0638 5.06383 21.4894C5.65957 21.5745 6.17021 21.6596 6.76596 21.6596C7.53192 21.6596 8.38298 21.4894 9.06383 21.3191C4.97872 20.4681 1.91489 16.8936 1.91489 12.5532V12.4681C3.10638 13.1489 4.55319 13.4894 6 13.5745C3.53192 11.9574 2 9.23404 2 6.17021C2 4.46809 2.42553 2.93617 3.19149 1.65958C7.61702 7.02128 14.2553 10.5957 21.6596 11.0213C21.4894 10.3404 21.4043 9.65958 21.4043 8.97872C21.4043 4.04255 25.4043 0.0425543 30.3404 0.0425543C32.8936 0.0425543 35.1915 1.06383 36.8936 2.85106C38.8511 2.42553 40.8085 1.65958 42.5106 0.638299C41.8298 2.76596 40.4681 4.46809 38.5957 5.57447C40.383 5.40426 42.1702 4.89362 43.7021 4.21277C42.5106 6 40.9787 7.53192 39.2766 8.80851Z" fill="#515869"/>
+                      </svg>  
+                  </a>
+              
+                  <a href="#" class=" w-[29px] h-[24px] lg:w-[39px] lg:h-[39px]">     
+                      <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.5 9.87234C14.0532 9.87234 9.71277 14.2979 9.71277 19.6596C9.71277 25.1064 14.0532 29.4468 19.5 29.4468C24.8617 29.4468 29.2872 25.1064 29.2872 19.6596C29.2872 14.2979 24.8617 9.87234 19.5 9.87234ZM19.5 26.0426C16.0106 26.0426 13.117 23.234 13.117 19.6596C13.117 16.1702 15.9255 13.3617 19.5 13.3617C22.9894 13.3617 25.7979 16.1702 25.7979 19.6596C25.7979 23.234 22.9894 26.0426 19.5 26.0426ZM31.9255 9.53192C31.9255 10.8085 30.9043 11.8298 29.6277 11.8298C28.3511 11.8298 27.3298 10.8085 27.3298 9.53192C27.3298 8.25532 28.3511 7.23404 29.6277 7.23404C30.9043 7.23404 31.9255 8.25532 31.9255 9.53192ZM38.3936 11.8298C38.2234 8.76596 37.5426 6.04255 35.3298 3.82979C33.117 1.61702 30.3936 0.936171 27.3298 0.765959C24.1809 0.595746 14.734 0.595746 11.5851 0.765959C8.52128 0.936171 5.88298 1.61702 3.58511 3.82979C1.37234 6.04255 0.69149 8.76596 0.521277 11.8298C0.351064 14.9787 0.351064 24.4255 0.521277 27.5745C0.69149 30.6383 1.37234 33.2766 3.58511 35.5745C5.88298 37.7872 8.52128 38.4681 11.5851 38.6383C14.734 38.8085 24.1809 38.8085 27.3298 38.6383C30.3936 38.4681 33.117 37.7872 35.3298 35.5745C37.5426 33.2766 38.2234 30.6383 38.3936 27.5745C38.5638 24.4255 38.5638 14.9787 38.3936 11.8298ZM34.3085 30.8936C33.7128 32.5957 32.3511 33.8723 30.734 34.5532C28.1809 35.5745 22.2234 35.3191 19.5 35.3191C16.6915 35.3191 10.734 35.5745 8.26596 34.5532C6.56383 33.8723 5.28723 32.5957 4.60638 30.8936C3.58511 28.4255 3.84043 22.4681 3.84043 19.6596C3.84043 16.9362 3.58511 10.9787 4.60638 8.42553C5.28723 6.80851 6.56383 5.53192 8.26596 4.85106C10.734 3.82979 16.6915 4.08511 19.5 4.08511C22.2234 4.08511 28.1809 3.82979 30.734 4.85106C32.3511 5.44681 33.6277 6.80851 34.3085 8.42553C35.3298 10.9787 35.0745 16.9362 35.0745 19.6596C35.0745 22.4681 35.3298 28.4255 34.3085 30.8936Z" fill="#515869"/>
+                      </svg>
+                  </a>
+              
+                  <a href="#" class="mr-[15px] w-[29px] h-[24px] lg:w-[39px] lg:h-[39px]">  
+                      <svg viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.5 0.553193C9.84043 0.553193 0.393618 10.0851 0.393618 21.6596C0.393618 33.3191 9.84043 42.766 21.5 42.766C33.0745 42.766 42.6064 33.3191 42.6064 21.6596C42.6064 10.0851 33.0745 0.553193 21.5 0.553193ZM31.2021 14.9362C30.9468 18.2553 29.5851 26.4255 28.8191 30.0851C28.5638 31.7021 27.9681 32.2128 27.3723 32.2979C26.1809 32.383 25.2447 31.4468 24.0532 30.6809C22.1809 29.4894 21.1596 28.7234 19.3723 27.5319C17.2447 26.1702 18.6064 25.4043 19.7979 24.2128C20.1383 23.8723 25.5 18.9362 25.5851 18.5106C25.6702 18.4255 25.6702 18.2553 25.5 18.0851C25.4149 18 25.2447 18.0851 25.0745 18.0851C24.9043 18.0851 21.9255 20.0426 16.2234 23.9574C15.3723 24.5532 14.6064 24.8085 13.9255 24.8085C13.1596 24.8085 11.7128 24.383 10.6064 24.0426C9.32979 23.617 8.2234 23.3617 8.30851 22.6809C8.39362 22.2553 8.90426 21.9149 9.92553 21.4894C16.0532 18.766 20.1383 17.0638 22.1809 16.2128C28.0532 13.7447 29.3298 13.3191 30.0957 13.3191C30.266 13.3191 30.6915 13.3191 30.9468 13.5745C31.0319 13.6596 31.2021 13.9149 31.2021 14.0851C31.2872 14.4255 31.2872 14.6809 31.2021 14.9362Z" fill="#515869"/>
+                      </svg>
+                  </a>
+              
+                  </div>
+              
+              </div>
+            </div>
+        
+        </div>
+        
+        </div>
+        
+        
+        
+        </footer>
+
+
+
+
+
+
+    
+</body>
+
+<script src="../src/js/menu.js"></script>
+<script src="../src/js/menufooter.js"></script>
+
+<script src="../src/library/swiper-slider/javascript.js"></script>
+<script src="../src/js/swiperslider.js"></script>
+
+</html>
